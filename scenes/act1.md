@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: I OVO JE LJUDSKA ANKSIOZNOST
 
-n: _YOU_ ARE THE ANXIETY
+n: _TI_ SI ANKSIOZNOST
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: Oh, hej! Ponovno smo ovdje?
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: TVOJ POSAO JE ZAŠTITITI TVOJEG ČOVJEKA OD *OPASNOSTI*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: U STVARI, PONAVLJANJE OVE IGRE IH STAVLJA U *OPASNOST* UPRAVO SADA
 
-n: QUICK, WARN THEM!
+n: BRZO, UPOZORI IH!
 
 ```
 sfx("squeak");
@@ -42,13 +42,13 @@ bb({body:"squeeze_talk"});
 hong({body:"0_squeeze"});
 ```
 
-b: Human! Listen, we're in danger! The player...
+b: Čovječe! Slušaj, mi smo u opasnosti! Igrač...
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...će nas opet mučiti!](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...neće pronaći alternativni završetak!](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...će dobiti ludonarrativnu disonancu!](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,32 +59,32 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: Natjerat će nas da se sklupčamo u kuglu i plačemo!
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: Natjerat će nas da ubijemo naš mobitel zbog napada panike!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: Natjerat će nas da *NE* udarimo ugostitelja zabave!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: Natjerat će nas da udarimo simpatičnog protiv zlikovačkoga ugostitelja zabave!
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
+h: Pa barem možda nećemo skočiti s krova ovaj pu--
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b: NATJERAT ĆE NAS DA SKOČIMO SA KROVA.
 {{/if}}
 
 `bb({body:"fear"});`
 
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+b: SVE OVE NOVE UŽASNE STVARI ĆE NAM SE DOGODITI, A ONDA ĆEMO...
 
 (#act1_replay_end)
 
@@ -96,11 +96,10 @@ bb({body:"normal", mouth:"normal", eyes:"fear"});
 hong({body:"0_sammich"});
 ```
 
-h: Sure, the story as a *whole* is the same, but each chapter has two possible endings, plus all the branching dialogue opti--
-
+h: Svakako, priča kao *cjelina* je ista, ali svako poglavlje ima dva moguća završetka, plus sve razgranate dijaloške mogućnosti--
 `bb({body:"fear"});`
 
-b: The player will be disappointed, close this browser tab, delete our software, and then we'll--
+b: Igrač će biti razočaran, zatvoriti ovu karticu preglednika, izbrisati naš softver, a zatim ćemo--
 
 (#act1_replay_end)
 
